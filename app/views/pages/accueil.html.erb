@@ -10,10 +10,12 @@
 
 
 <body>
+<%= image_tag("logos/APEFE-logo-1000px.jpg") %>
+
 <div class="container">
 	<div class="div_img">
     <h1 style="text-align: center;">Gestion des plaintes</h1>
-    <p>Date : </p>
+    <p>Date : <%= Date.today  %> </p>
 
     <p style="text-align: justify;">
 	Chaque jour, l’APEFE doit mériter la confiance de ses donateurs, des pays partenaires et des populations pour lesquelles nous travaillons. Notre code de conduite est la pierre angulaire de notre engagement éthique <a href="https://www.apefe.org/Documents/Code_Ethique_2019.pdf" target="_blank">
@@ -24,6 +26,7 @@
 	<br>
 	<strong>
 		Quand appeler le bureau de l'intégrité ?
+	
 	</strong>
 	<br>
 	Lorsque vous êtes confronté à ce que vous percevez comme une rupture au regard du code éthique.
@@ -131,6 +134,10 @@
     <input type="checkbox" class="form-check-input" id="exampleCheck1">
     <label class="form-check-label" for="exampleCheck1">Acceptation</label>
   </div>
+
+<p>
+   Ce formulaire est protégé par reCAPTCHA et les règles de Google <a href="https://policies.google.com/privacy">Règles de confidentialité</a> et <a href="https://policies.google.com/terms">Conditions d’utilisation </a> sont appliquées.
+</p>
   
   <button type="submit" class="btn btn-primary">Envoyer</button>
 </form>
